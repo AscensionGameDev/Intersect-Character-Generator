@@ -1619,6 +1619,9 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlContainer.AutoScroll = true;
             this.pnlContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlContainer.Controls.Add(this.picSprite);
@@ -1669,6 +1672,7 @@
             // 
             this.trackZoom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackZoom.LargeChange = 1;
             this.trackZoom.Location = new System.Drawing.Point(53, 19);
             this.trackZoom.Maximum = 5;
             this.trackZoom.Minimum = 1;

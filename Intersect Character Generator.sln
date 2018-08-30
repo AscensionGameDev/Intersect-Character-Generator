@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intersect Character Generator", "Intersect Character Generator\Intersect Character Generator.csproj", "{95158FF1-8097-40BB-ADE7-04AFC5E53E67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95158FF1-8097-40BB-ADE7-04AFC5E53E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95158FF1-8097-40BB-ADE7-04AFC5E53E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95158FF1-8097-40BB-ADE7-04AFC5E53E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95158FF1-8097-40BB-ADE7-04AFC5E53E67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30D5F22E-4C73-4621-A865-A5AAB6870A97}
+	EndGlobalSection
+EndGlobal

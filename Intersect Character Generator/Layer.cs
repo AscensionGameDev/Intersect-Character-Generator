@@ -16,7 +16,7 @@ namespace Intersect_Character_Generator
         public Dictionary<string, string> MaleParts = new Dictionary<string, string>();
         public Dictionary<string, string> FemaleParts = new Dictionary<string, string>();
 
-        private List<string> directories = new List<string>();
+        private string directory;
         private DarkComboBox cmbItems;
         private DarkButton colorBtn;
         private frmGenerator frmGenerator;
@@ -30,7 +30,7 @@ namespace Intersect_Character_Generator
         private Bitmap alteredGraphic;
         public string graphicPath = "";
 
-        public Layer(string[] folderNames, DarkComboBox itemList, DarkButton colorButton, ColorDialog colorD, TrackBar intBar, TrackBar aBar,PictureBox lockPic, frmGenerator form)
+        public Layer(string folderName, DarkComboBox itemList, DarkButton colorButton, ColorDialog colorD, TrackBar intBar, TrackBar aBar,PictureBox lockPic, frmGenerator form)
         {
             if (!Directory.Exists("assets")) Directory.CreateDirectory("assets");
             frmGenerator = form;
@@ -38,7 +38,7 @@ namespace Intersect_Character_Generator
             intensityBar = intBar;
             lockBox = lockPic;
             alphaBar = aBar;
-            directories.AddRange(folderNames);
+            directory = folderName;
             cmbItems = itemList;
             colorBtn = colorButton;
             LoadItems();
@@ -296,14 +296,12 @@ namespace Intersect_Character_Generator
         {
             MaleParts.Clear();
             FemaleParts.Clear();
-            foreach (var folder in directories)
-            {
-                if (!Directory.Exists(Path.Combine("assets", folder))) Directory.CreateDirectory(Path.Combine("assets", folder));
-                AddImagesToList(Path.Combine("assets", folder, "male"), MaleParts);
-                AddImagesToList(Path.Combine("assets", folder, "female"), FemaleParts);
-                AddImagesToList(Path.Combine("assets", folder, "unisex"), MaleParts);
-                AddImagesToList(Path.Combine("assets", folder, "unisex"), FemaleParts);
-            }
+            var folder = directory;
+            if (!Directory.Exists(Path.Combine("assets", folder))) Directory.CreateDirectory(Path.Combine("assets", folder));
+            AddImagesToList(Path.Combine("assets", folder, "male"), MaleParts);
+            AddImagesToList(Path.Combine("assets", folder, "female"), FemaleParts);
+            AddImagesToList(Path.Combine("assets", folder, "unisex"), MaleParts);
+            AddImagesToList(Path.Combine("assets", folder, "unisex"), FemaleParts);
             MaleParts = SortDictionary(MaleParts);
             FemaleParts = SortDictionary(FemaleParts);
         }

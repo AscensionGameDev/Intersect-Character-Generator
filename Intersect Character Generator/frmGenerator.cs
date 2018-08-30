@@ -33,21 +33,21 @@ namespace Intersect_Character_Generator
 
         private void frmGenerator_Load(object sender, EventArgs e)
         {
-            _layers.Add(new Layer(new string[] { "charbase", "bodies" }, cmbBody, btnBodyHue, colorDialog, trkBodyHueIntensity, trkBodyAlpha, picBodyLock, this));
-            _layers.Add(new Layer(new string[] { "eyes" }, cmbEyes, btnEyesHue, colorDialog, trkEyesHueIntensity, trkEyesAlpha, picEyesLock, this));
-            _layers.Add(new Layer(new string[] { "hair" }, cmbHair, btnHairHue, colorDialog, trkHairHueIntensity, trkHairAlpha, picHairLock, this));
-            _layers.Add(new Layer(new string[] { "facialhair" }, cmbFacialHair, btnFacialHairHue, colorDialog, trkFacialHairHueIntensity, trkFacialHairAlpha, picFacialHairLock, this));
-            _layers.Add(new Layer(new string[] { "headwear" }, cmbHeadwear, btnHeadwearHue, colorDialog, trkHeadwearHueIntensity, trkHeadwearAlpha, picHeadwearLock, this));
-            _layers.Add(new Layer(new string[] { "shirt" }, cmbShirt, btnShirtHue, colorDialog, trkShirtHueIntensity, trkShirtAlpha, picShirtLock, this));
-            _layers.Add(new Layer(new string[] { "shoulders" }, cmbShoulders, btnShouldersHue, colorDialog, trkShouldersHueIntensity, trkShouldersAlpha, picShouldersLock, this));
-            _layers.Add(new Layer(new string[] { "gloves" }, cmbGloves, btnGlovesHue, colorDialog, trkGlovesHueIntensity, trkGlovesAlpha, picGlovesLock, this));
-            _layers.Add(new Layer(new string[] { "pants" }, cmbPants, btnPantsHue, colorDialog, trkPantsHueIntensity, trkPantsAlpha, picPantsLock, this));
-            _layers.Add(new Layer(new string[] { "waist" }, cmbWaist, btnWaistHue, colorDialog, trkWaistHueIntensity, trkWaistAlpha, picWaistLock, this));
-            _layers.Add(new Layer(new string[] { "boots" }, cmbBoots, btnBootsHue, colorDialog, trkBootsHueIntensity, trkBootsAlpha, picBootsLock, this));
-            _layers.Add(new Layer(new string[] { "accessories" }, cmbAccessory1, btnBootsHue, colorDialog, trkAccessory1HueIntensity, trkAccessory1Alpha, picAccessory1Lock, this));
-            _layers.Add(new Layer(new string[] { "accessories" }, cmbAccessory2, btnBootsHue, colorDialog, trkAccessory2HueIntensity, trkAccessory2Alpha, picAccessory2Lock, this));
-            _layers.Add(new Layer(new string[] { "accessories" }, cmbAccessory3, btnBootsHue, colorDialog, trkAccessory3HueIntensity, trkAccessory3Alpha, picAccessory3Lock, this));
-            _layers.Add(new Layer(new string[] { "accessories" }, cmbAccessory4, btnBootsHue, colorDialog, trkAccessory4HueIntensity, trkAccessory4Alpha, picAccessory4Lock, this));
+            _layers.Add(new Layer("bodies", cmbBody, btnBodyHue, colorDialog, trkBodyHueIntensity, trkBodyAlpha, picBodyLock, this));
+            _layers.Add(new Layer("eyes", cmbEyes, btnEyesHue, colorDialog, trkEyesHueIntensity, trkEyesAlpha, picEyesLock, this));
+            _layers.Add(new Layer("hair", cmbHair, btnHairHue, colorDialog, trkHairHueIntensity, trkHairAlpha, picHairLock, this));
+            _layers.Add(new Layer("facialhair", cmbFacialHair, btnFacialHairHue, colorDialog, trkFacialHairHueIntensity, trkFacialHairAlpha, picFacialHairLock, this));
+            _layers.Add(new Layer("headwear", cmbHeadwear, btnHeadwearHue, colorDialog, trkHeadwearHueIntensity, trkHeadwearAlpha, picHeadwearLock, this));
+            _layers.Add(new Layer("shirt", cmbShirt, btnShirtHue, colorDialog, trkShirtHueIntensity, trkShirtAlpha, picShirtLock, this));
+            _layers.Add(new Layer("shoulders", cmbShoulders, btnShouldersHue, colorDialog, trkShouldersHueIntensity, trkShouldersAlpha, picShouldersLock, this));
+            _layers.Add(new Layer("gloves", cmbGloves, btnGlovesHue, colorDialog, trkGlovesHueIntensity, trkGlovesAlpha, picGlovesLock, this));
+            _layers.Add(new Layer("pants", cmbPants, btnPantsHue, colorDialog, trkPantsHueIntensity, trkPantsAlpha, picPantsLock, this));
+            _layers.Add(new Layer("waist", cmbWaist, btnWaistHue, colorDialog, trkWaistHueIntensity, trkWaistAlpha, picWaistLock, this));
+            _layers.Add(new Layer("boots", cmbBoots, btnBootsHue, colorDialog, trkBootsHueIntensity, trkBootsAlpha, picBootsLock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory1, btnBootsHue, colorDialog, trkAccessory1HueIntensity, trkAccessory1Alpha, picAccessory1Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory2, btnBootsHue, colorDialog, trkAccessory2HueIntensity, trkAccessory2Alpha, picAccessory2Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory3, btnBootsHue, colorDialog, trkAccessory3HueIntensity, trkAccessory3Alpha, picAccessory3Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory4, btnBootsHue, colorDialog, trkAccessory4HueIntensity, trkAccessory4Alpha, picAccessory4Lock, this));
 
             _saveSpriteDialog = new SaveFileDialog();
             _saveSpriteDialog.Filter = "PNG Image|*.png";

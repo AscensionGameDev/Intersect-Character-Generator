@@ -44,10 +44,10 @@ namespace Intersect_Character_Generator
             _layers.Add(new Layer("pants", cmbPants, btnPantsHue, colorDialog, trkPantsHueIntensity, trkPantsAlpha, picPantsLock, this));
             _layers.Add(new Layer("waist", cmbWaist, btnWaistHue, colorDialog, trkWaistHueIntensity, trkWaistAlpha, picWaistLock, this));
             _layers.Add(new Layer("boots", cmbBoots, btnBootsHue, colorDialog, trkBootsHueIntensity, trkBootsAlpha, picBootsLock, this));
-            _layers.Add(new Layer("accessories", cmbAccessory1, btnBootsHue, colorDialog, trkAccessory1HueIntensity, trkAccessory1Alpha, picAccessory1Lock, this));
-            _layers.Add(new Layer("accessories", cmbAccessory2, btnBootsHue, colorDialog, trkAccessory2HueIntensity, trkAccessory2Alpha, picAccessory2Lock, this));
-            _layers.Add(new Layer("accessories", cmbAccessory3, btnBootsHue, colorDialog, trkAccessory3HueIntensity, trkAccessory3Alpha, picAccessory3Lock, this));
-            _layers.Add(new Layer("accessories", cmbAccessory4, btnBootsHue, colorDialog, trkAccessory4HueIntensity, trkAccessory4Alpha, picAccessory4Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory1, btnAccessory1Hue, colorDialog, trkAccessory1HueIntensity, trkAccessory1Alpha, picAccessory1Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory2, btnAccessory2Hue, colorDialog, trkAccessory2HueIntensity, trkAccessory2Alpha, picAccessory2Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory3, btnAccessory3Hue, colorDialog, trkAccessory3HueIntensity, trkAccessory3Alpha, picAccessory3Lock, this));
+            _layers.Add(new Layer("accessories", cmbAccessory4, btnAccessory4Hue, colorDialog, trkAccessory4HueIntensity, trkAccessory4Alpha, picAccessory4Lock, this));
 
             _saveSpriteDialog = new SaveFileDialog();
             _saveSpriteDialog.Filter = "PNG Image|*.png";

@@ -186,6 +186,7 @@ namespace Intersect_Character_Generator
             var btnSat = colorBtn.BackColor.GetSaturation();
             var btnHue = colorBtn.BackColor.GetHue();
             var intensityVal = intensityBar.Value;
+            if (origGraphic == null) return;
             BitmapData origBmd = origGraphic.LockBits(new Rectangle(0, 0, origGraphic.Width, origGraphic.Height), System.Drawing.Imaging.ImageLockMode.ReadOnly, origGraphic.PixelFormat);
             BitmapData alteredBmd = alteredGraphic.LockBits(new Rectangle(0, 0, alteredGraphic.Width, alteredGraphic.Height), System.Drawing.Imaging.ImageLockMode.ReadWrite, alteredGraphic.PixelFormat);
             int PixelSize = 4;
